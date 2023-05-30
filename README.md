@@ -39,8 +39,8 @@ THEN the password is either displayed in an alert or written to the page
 
 ## Sources
 
-- list of password special characters (https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
-- 
+- List of password special characters (https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+- Example password generator --> How to approach building one: https://dev.to/code_mystery/random-password-generator-using-javascript-6a 
 
 ## Link to Deployed Website 
 
