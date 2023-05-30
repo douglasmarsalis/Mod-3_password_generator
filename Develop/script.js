@@ -1,35 +1,42 @@
 // This code selects for the generate ID inside the button inside the HTML.
 var generateBtn = document.querySelector("#generate");
 
-function generatePassword() {
-  var password = "";
-  var length = ;
-  var character = "";
+var lowercase = "abcdefghijklmnopqrstuvwxyz";
+var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numberSet = "0123456789";
+var specialCharacter = " !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
 
-  for (var i = 0; i <= 128; i++) {
-    var randomNumber = Math.floor(Math.random() * character.length);
-    password += character.substring(randomNumber, randomNumber +1);
-  }
-// This will help verify that the user has clicked on the button to get started.
-  console.log("Thank you for clicking the button!")  
-  var characterSets = {
-    lowercase: "abcdefghijklmnopqrstuvwxyz",
-    uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-    numberSet: "0123456789",
-    specialCharacter: " !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
-}    
-//Display the password to the page - this is done already.
-// This will message the user about where their finished generated password will go
-  return "Your generated password will go here.";
-    
-  };   
+var passwordLength = "";
+var passwordLower;
+var passwordUpper;
+var passwordSpecial;
+var passwordNumber;
+
+
+// Prompt for Length Question, Alert for wrong number, Question again, and Alert for telling the final number.
 //Prompt the user for the user criteria
+function generatePassword() {
+  var passwordLength = (prompt("How many characters would you like your password to contain (8-128 characters)?"));
 
 //Password is between 8 and 128
-
-//Lowercase, uppercase, numbers and special characters
+  while(passwordLength >= 8 || passwordLength <= 128) {
+    alert("Password length must be between 8 to 128 characters. Please try again!");
+  var passwordLength = (prompt("How many characters would you like your password to contain (8-128 characters?"));
+  }
 
 //Make sure the input is validated
+    alert("Your password will contain ${confirmLength} characters.");
+
+// This will message the user about where their finished generated password will go.
+    return "Your generated password will go here.";
+} 
+   
+//Lowercase, uppercase, numbers and special characters
+
+for (var i = 0; i <= passwordLength; i++) {
+  var randomNumber = Math.floor(Math.random() * character.length);
+  password += character.substring(randomNumber, randomNumber +1);
+  }
 
 /* The generatePassword stores info in the password variable. The passwordText code is linked to 
 the password ID inside the HTML. */
@@ -46,42 +53,3 @@ function writePassword() {
 writePassword can be found under the ABOVE function.*/
 generateBtn.addEventListener("click", writePassword);
 
-
-
-
-
-
-/*
-// New code dev.to
-var character = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-var password = "";
-
-//New code Greeting stackoverflow EXTRA
-var hours = newDate().hours;
-if(hours < 12) {
-  alert("Good Morning!");
-} else if (hours >= 12 || hours < 18){
-  alert("Good Afternoon!");
-} else {
-  alert("Good Evening!");
-}
-
-// New code stackoverflow
-var length = number(prompt("Please enter a password length between 8 and 128 characters.")),
-characterTypes = (prompt("Please choose character type(s): lowercase, uppercase, number, or special character.")),
-password = generatePassword ();
-
-function generatePassword() {
-  var characterSets = {
-    lowercase: "abcdefghijklmnopqrstuvwxyz",
-    uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-    numberSet: "0123456789",
-    specialCharacter: " !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
-  };
-
-  for (var i = 0; i <= passwordLength; i++) {
-    var randomNumber = Math.floor(Math.random() * character.length);
-    password += character.substring(randomNumber, randomNumber + 1);
-  }
-}
-*/
