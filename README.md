@@ -1,10 +1,13 @@
-# 03 JavaScript: Password Generator
+# Mod-3 JavaScript: Password Generator
 
-## Your Task
+## Description 
 
-This week's Challenge requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
-
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+- First item For this project, I will create an application that will enable emplyees to generate random passwords based on criteria that they will select.
+- Second item This application will run in the browser and will feature updated HTML and CSS supported by JavaScript that I will write.
+- Third item The webpage and code will be clean and will have a responsive user interface that will adjust to multiple screen sizes.
+- Fourth item I will make sure that my code follows industry standards and is sourced correctly.
+- Fifth item I will review my code, look for problems and fix those issues.
+- Sixth item By building this webpage, it has helped me to learn information on HTML, CSS, JavaScript, GIT, GitHub, READme markdown information, and Deployment.
 
 ## User Story
 
@@ -34,67 +37,34 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
 
-## Mock-Up
+## Sources
 
-The following image shows the web application's appearance and functionality:
+- list of password special characters (https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+- 
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+## Link to Deployed Website 
 
-## Grading Requirements
+## Link to Github Repository
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+## Screenshot
 
-This Challenge is graded based on the following criteria: 
 
-### Technical Acceptance Criteria: 40%
+## Instalation 
 
-* Satisfies all of the preceding acceptance criteria.
+N/A
 
-### Deployment: 32%
+## Credits
 
-* Application deployed at live URL.
+N/A
 
-* Application loads with no errors.
+## License
 
-* Application GitHub URL submitted.
+MIT License
 
-* GitHub repository that contains application code.
+Copyright (c) 2023 Douglas Eric Marsalis
 
-### Application Quality: 15%
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-* Application user experience is intuitive and easy to navigate.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
