@@ -4,8 +4,8 @@ var generateBtn = document.querySelector("#generate");
 var lowercase = "abcdefghijklmnopqrstuvwxyz";
 var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numberSet = "0123456789";
-var specialCharacter = " !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-
+var specialCharacter =  " !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+                                                                 
 var passwordLength = "";
 var passwordLower;
 var passwordUpper;
@@ -34,7 +34,7 @@ function generatePassword() {
 //Lowercase, uppercase, numbers and special characters
 
 for (var i = 0; i <= passwordLength; i++) {
-  var randomNumber = Math.floor(Math.random() * character.length);
+  var randomNumber = Math.floor(Math.random() * password.length);
   password += character.substring(randomNumber, randomNumber +1);
   }
 
