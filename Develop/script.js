@@ -12,7 +12,7 @@ var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"
 var numberSet = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9",]
 var specialCharact = [" ", "!", """, "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\", "]", "^", "_", "`", "{", "|", "}", "~",]
 
-//Variable Declarations
+//Variable declarations list
 var confirmLength = "";
 var confirmLowercase;
 var confirmUppercase;
@@ -22,32 +22,66 @@ var confirmSpecialCharact;
 /*This is a loop for the Message Prompt for password length.  It will make sure that 
 the length falls within the limits of 8 - 128 characters*/
 function generate() {
-  var length = (prompt("Please enter a password character length between 8 and 128 characters."));
-  while(length < 8 || length > 128) {
+  var confirmLength = (prompt("Please enter a password character length between 8 and 128 characters."));
+  while(confirmLength < 8 || confirmLength > 128) {
     alert("Sorry, the length MUST be between 8 and 128 characters!");
     var length = (prompt("Please enter a password character length between 8 and 128 characters."));
   }
 }
 
+// Message repeats back how many charactes the USER will have.  
+    alert(`Your password will have ${confirmLength} characters!`);
+
 /* These are additional Message Prompts for confirming other requirements needed to generate the password. 
 The user has a choice to include the characters or not to include the characters by clicking OK or CANCEL.*/
-var lowercase = confirm("Please click the OK button to include LOWERCASE characters.  If not, click CANCEL.");
-var uppercase = confirm("Please click the OK button to include UPPERCASE characters. If not, click CANCEL.");
-var numberSet = confirm("Please click the OK button to include NUMBERS. If not, click CANCEL.");
+var confirmLowercase = confirm("Please click the OK button to include LOWERCASE characters.  If not, click CANCEL.");
+var confirmUppercase = confirm("Please click the OK button to include UPPERCASE characters. If not, click CANCEL.");
+var confirmNumberSet = confirm("Please click the OK button to include NUMBERS. If not, click CANCEL.");
 var confirmSpecialCharact = confirm("Please click the OK button to include SPECIAL characters.  If not, click CANCEL.");
 
 // To make sure the USER chooses at least one of the requirements from the above confirmation, a Boolean is used.
 while(lowercase === false && uppercase === false && numberSet === false && specialCharact === false) {
-  var lowercase = confirm("Please click the OK button to include LOWERCASE characters.  If not, click CANCEL.");
-  var uppercase = confirm("Please click the OK button to include UPPERCASE characters. If not, click CANCEL.");
-  var numberSet = confirm("Please click the OK button to include NUMBERS. If not, click CANCEL.");
+    alert("Sorry, you MUST click OK for at least ONE of the characters to continue!")
+  var confirmLowercase = confirm("Please click the OK button to include LOWERCASE characters.  If not, click CANCEL.");
+  var confirmUppercase = confirm("Please click the OK button to include UPPERCASE characters. If not, click CANCEL.");
+  var confirmNumberSet = confirm("Please click the OK button to include NUMBER characters. If not, click CANCEL.");
   var confirmSpecialCharact = confirm("Please click the OK button to include SPECIAL characters.  If not, click CANCEL.");
 }
 
+ // This will concatenate (link) the characters together in a string.
+      var passwordCharacters = []
+     
+    if (confirmLowercase) {
+      passwordCharacters = passwordCharacters.concat(lowercase)
+    }
+
+    if (confirmUppercase) {
+      passwordCharacters = passwordCharacters.concat(uppercase)
+    }
+
+    if (confirmNumberSet) {
+      passwordCharacters = passwordCharacters.concat(number)
+    }
+
+    if (confirmSpecialCharact) {
+      passwordCharacters = passwordCharacters.concat(specialCharact)
+    }
+
+      console.log(passwordCharacters)
 
 
 
 
+
+
+
+// This function will output the password to the screen.
+function beginPrompt() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+// This line that will display to the screen.
+  passwordText.value = password;
+}
 
 
 
