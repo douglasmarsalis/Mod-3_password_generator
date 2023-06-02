@@ -43,6 +43,7 @@ THEN the password is either displayed in an alert or written to the page
 - Example password generator --> How to approach building one: https://dev.to/code_mystery/random-password-generator-using-javascript-6a 
 - Random password generator with prompts - https://stackoverflow.com 
 - Youtube video guide on how to attack this code (This may be an old Rice instructor) - https://www.youtube.com/watch?v=x4HUaiazDes 
+- A VERY BIG THANK YOU to my classmate Daniel Williams on coaching me on the JavaScript and guiding me on my homework.
 
 ## Link to Deployed Website 
 
