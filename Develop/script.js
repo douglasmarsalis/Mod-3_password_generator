@@ -1,16 +1,49 @@
 // This code selects for the generate ID inside the button inside the HTML.
 var generateBtn = document.querySelector("#generate");
 
-var lowercase = "abcdefghijklmnopqrstuvwxyz";
-var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var numberSet = "0123456789";
-var specialCharacter =  " !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-                                                                 
-var passwordLength = "";
-var passwordLower;
-var passwordUpper;
-var passwordSpecial;
-var passwordNumber;
+//Arrays list
+var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",]
+var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",]
+var numberSet = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9",]
+var specialCharacter = [" ", "!", """, "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\", "]", "^", "_", "`", "{", "|", "}", "~",]
+
+//Variable Declarations
+var confirmLength = "";
+var confirmLowercase;
+var confirmUppercase;
+var confirmNumberSet;
+var confirmSpecialCharacter;
+
+//Prompts for password length and character type.
+function writePassword() {
+  var length numberSet(prompt("Please enter a password length between 8 and 128 characters."));
+  var characterType(prompt("Please enter a character type: Special, Number, Uppercase or Lowercase."));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+var length = numberSet(prompt("Please enter a password length between 8 and 128 characters.")),
+    characterType = prompt("Please enter a character type: Special, Number, Uppercase or Lowercase."),
+    password = generatePassword();
+
+   
+/* The generatePassword stores info in the password variable. The passwordText code is linked to 
+the password ID inside the HTML. */
+function generatePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+/*This code will have the user click on the button and the password will be written - the 
+writePassword can be found under the ABOVE function.*/
+generateBtn.addEventListener("click", writePassword);
 
 
 // Prompt for Length Question, Alert for wrong number, Question again, and Alert for telling the final number.
@@ -38,18 +71,11 @@ for (var i = 0; i <= passwordLength; i++) {
   password += character.substring(randomNumber, randomNumber +1);
   }
 
-/* The generatePassword stores info in the password variable. The passwordText code is linked to 
-the password ID inside the HTML. */
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+
 
   // This is the line that displays on the screen.
   passwordText.value = password;
 
 }
 
-/*This code will have the user click on the button and the password will be written - the 
-writePassword can be found under the ABOVE function.*/
-generateBtn.addEventListener("click", writePassword);
 
