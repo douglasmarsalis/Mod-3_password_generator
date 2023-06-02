@@ -29,7 +29,7 @@ function generate() {
   }
 }
 
-// Message repeats back how many charactes the USER will have.  
+// Message reports back how many charactes the USER will have.  
     alert(`Your password will have ${confirmLength} characters!`);
 
 /* These are additional Message Prompts for confirming other requirements needed to generate the password. 
@@ -69,11 +69,14 @@ while(lowercase === false && uppercase === false && numberSet === false && speci
 
       console.log(passwordCharacters)
 
+//The empty string will be filled based on the loop of random characters from the array.   
+var randomPassword = ""
 
-
-
-
-
+  for (var i = 0; i < confirmLength; i++) {
+        randomPassword = randomPassword + passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
+        console.log(randomPassword)
+      }
+      return randomPassword;      
 
 // This function will output the password to the screen.
 function beginPrompt() {
