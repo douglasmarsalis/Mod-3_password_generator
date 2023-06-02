@@ -1,5 +1,5 @@
 // This code selects for the generate ID inside the button inside the HTML.
-var generateBtn = document.querySelector("#generate");
+document.querySelector("#generate").addEventListener("click", beginPrompt);
 
 //Arrays list
 var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",]
@@ -14,10 +14,14 @@ var confirmUppercase;
 var confirmNumberSet;
 var confirmSpecialCharacter;
 
-//Prompts for password length and character type.
-function writePassword() {
-  var length numberSet(prompt("Please enter a password length between 8 and 128 characters."));
-  var characterType(prompt("Please enter a character type: Special, Number, Uppercase or Lowercase."));
+/*This is a loop for the Message Prompt for password length.  It will make sure that 
+the length falls within the limits 0f 8 - 128 characters*/
+function generatePassword() {
+  var length = (prompt("Please enter a password length between 8 and 128 characters."));
+  while(length < 8 || length > 128) {
+    alert("Sorry, the length must be between 8 and 128 characters!");
+    var length = (prompt("Please enter a password length between 8 and 128 characters."));
+  }
 }
 
 
