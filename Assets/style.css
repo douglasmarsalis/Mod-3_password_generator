@@ -118,6 +118,7 @@ button[disabled] {
   overflow: hidden;
 }
 
+
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
@@ -133,5 +134,19 @@ button[disabled] {
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
+  }
+}
+
+/* Need to add Media Queries for SMALL screen sizes*/
+@media screen and (max-width: 393px) {
+  .card-header > h2 {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .card-header > h2 {
+    font-size: 20px;
+    margin-left: 25px;
   }
 }
