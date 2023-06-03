@@ -49,7 +49,7 @@ THEN the password is either displayed in an alert or written to the page
 ## Link to Deployed Website 
 
 ## Link to Github Repository
-
+https://github.com/douglasmarsalis/Mod-3_password_generator 
 ## Screenshot
 
 ![Screen shot of my webpage](Assets/images/Screenshot_Password_Generator.png)
