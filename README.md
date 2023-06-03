@@ -47,6 +47,7 @@ THEN the password is either displayed in an alert or written to the page
 - A VERY BIG THANK YOU to my classmate Daniel Williams on coaching me on the JavaScript and guiding me on my homework.
 
 ## Link to Deployed Website 
+https://douglasmarsalis.github.io/Mod-3_password_generator/
 
 ## Link to Github Repository
 https://github.com/douglasmarsalis/Mod-3_password_generator 
