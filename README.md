@@ -44,7 +44,7 @@ THEN the password is either displayed in an alert or written to the page
 - Random password generator with prompts - https://stackoverflow.com 
 - Youtube video guide on how to attack this code (This may be an old Rice instructor) - https://www.youtube.com/watch?v=x4HUaiazDes 
 - This site contains a very good example for the password generator: https://faqsfeed.com/password-generator-project-in   javascript-with-free-source-code/ 
-- A VERY BIG THANK YOU to my classmate Daniel Williams on coaching me on the JavaScript and guiding me on my homework.
+- A VERY BIG THANK YOU to my classmates Daniel Williams and Lee Stevens for coaching me on the JavaScript.
 
 ## Link to Deployed Website 
 https://douglasmarsalis.github.io/Mod-3_password_generator/
